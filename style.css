@@ -10,10 +10,10 @@ body {
     padding: 0;
     /* Deep Ocean Blue Background */
     background-color: #0d1a26; 
-    color: #ffffff; /* Stark White text color for maximum contrast (FIX) */
+    color: #ffffff; /* Stark White text color for maximum contrast (FIXED) */
 }
 
-/* FIX: Ensure all links are visible and follow the theme */
+/* Ensure all links are visible and follow the theme */
 a {
     color: #ffcc00; /* Gold color for links */
     text-decoration: none;
@@ -37,22 +37,22 @@ header {
     border-bottom: 5px solid #ffcc00; /* Gold separator line */
 }
 
-/* Make Name (H1) bigger and bolder */
+/* Name (H1) */
 header h1 {
-    font-size: 3.5em; 
+    font-size: 3.5em; /* Significantly larger name */
     margin-bottom: 5px;
     color: #ffffff; /* White */
     letter-spacing: 2px;
 }
 
-/* Make Title (P) slightly larger and "Gold" */
+/* Title (P) */
 header p {
     font-size: 1.25em; 
     color: #ffcc00; /* The "Gold" accent color */
     font-weight: 300;
 }
 
-/* Style the CV button (overrides generic 'a' styles) */
+/* Style the CV button */
 .cv-button {
     display: inline-block;
     margin-top: 20px;
@@ -105,7 +105,7 @@ main section {
     margin: 20px auto;
     background-color: #1a2c3e; /* Dark content blocks */
     border-radius: 8px;
-    /* FIX: Ensure all inherited text remains white inside content blocks */
+    /* Ensure all inherited text remains white inside content blocks */
     color: #ffffff; 
 }
 
