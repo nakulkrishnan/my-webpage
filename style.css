@@ -64,7 +64,7 @@ footer {
 }
 
 /* Responsive design for mobile */
-@media (max-width: 600px) {
+@media (max-width: 50px) {
     section {
         padding: 20px;
     }
@@ -73,7 +73,7 @@ footer {
     display: block;
     max-width: 50px; /* Adjust size as needed */
     height: 50px;
-    border-radius: 50%; /* Makes it circular; remove for square */
+    border-radius: 10%; /* Makes it circular; remove for square */
     margin: 20px auto; /* Centers it */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
 }
