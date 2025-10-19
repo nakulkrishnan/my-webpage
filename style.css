@@ -63,24 +63,31 @@ footer {
     color: white;
 }
 
-/* Responsive design for mobile */
-@media (max-width: 50px) {
-    section {
-        padding: 20px;
-    }
-}
+/* 🟢 FIX for the "blown up" photo: Set a proper desktop size first */
 .profile-photo {
     display: block;
-    max-width: 50px; /* Adjust size as needed */
-    height: 50px;
-    border-radius: 10%; /* Makes it circular; remove for square */
-    margin: 20px auto; /* Centers it */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
+    max-width: 150px; /* Set a standard size for desktop */
+    height: 150px; /* Ensures a perfect circle/square */
+    border-radius: 50%; /* Changed to 50% for a true circular photo */
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    /* Ensures the image covers the area without distortion */
+    object-fit: cover; 
 }
 
-/* Ensure responsiveness for smaller screens */
-@media (max-width: 100px) {
+/* 📱 FIX for Responsive design: Use a standard mobile breakpoint (e.g., 600px) */
+@media (max-width: 600px) {
+    header {
+        padding: 30px 10px;
+    }
+    
+    section {
+        padding: 20px; /* Applies better padding on small screens */
+        max-width: 95%; /* Allows content to use more of the screen width */
+    }
+
     .profile-photo {
-        max-width: 100px; /* Smaller size on mobile */
+        max-width: 100px; /* Makes the photo a bit smaller on mobile */
+        height: 100px;
     }
 }
