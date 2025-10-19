@@ -68,7 +68,7 @@ footer {
     display: block;
     max-width: 150px; /* Set a standard size for desktop */
     height: 150px; /* Ensures a perfect circle/square */
-    border-radius: 50%; /* Changed to 50% for a true circular photo */
+    border-radius: 10%; /* Changed to 50% for a true circular photo */
     margin: 20px auto;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     /* Ensures the image covers the area without distortion */
