@@ -79,7 +79,7 @@ footer {
 }
 
 /* Ensure responsiveness for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 100px) {
     .profile-photo {
         max-width: 100px; /* Smaller size on mobile */
     }
