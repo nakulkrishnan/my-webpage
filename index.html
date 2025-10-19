@@ -14,9 +14,21 @@
             padding: 0;
             /* Deep Ocean Blue Background */
             background-color: #0d1a26; 
-            color: #f0f0f0; /* Light text color */
+            color: #f0f0f0; /* Light text color for high contrast */
         }
         
+        /* FIX: Ensure all links are visible and follow the theme */
+        a {
+            color: #ffcc00; /* Gold color for links */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ffffff; /* White on hover for contrast */
+            text-decoration: underline;
+        }
+
         /* Header Styling */
         header {
             text-align: center;
@@ -41,7 +53,7 @@
             font-weight: 300;
         }
         
-        /* Style the CV button */
+        /* Style the CV button (overrides generic 'a' styles) */
         .cv-button {
             display: inline-block;
             margin-top: 20px;
@@ -58,11 +70,15 @@
             background-color: #ffe066; /* Lighter gold on hover */
         }
 
-        /* Adjust section headings (optional but helps the theme) */
+        /* Adjust section headings for theme */
         h2 {
             color: #ffcc00; /* Gold color for section titles */
             border-bottom: 2px solid #334b63;
             padding-bottom: 10px;
+        }
+
+        h3 {
+             color: #ffffff; /* White for subtitles */
         }
 
         /* Basic main content styling for visibility */
@@ -72,6 +88,56 @@
             margin: 20px auto;
             background-color: #1a2c3e; /* Dark content blocks */
             border-radius: 8px;
+        }
+        
+        /* Basic list and footer styles */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        /* Basic navigation styles */
+        nav ul {
+            list-style: none;
+            text-align: center;
+            padding: 15px 0;
+            margin: 0;
+            background-color: #0d1a26;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Profile photo styling */
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffcc00;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #1a2c3e;
         }
     </style>
 </head>
@@ -86,7 +152,14 @@
     </header>
 
     <nav>
-        </nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="nakul_krishnan_cv.pdf" download>CV</a></li> 
+        </ul>
+    </nav>
     
     <main>
         <section id="about">
@@ -94,6 +167,40 @@
             <img src="images/my-photo.png" alt="Nakul Krishnan" class="profile-photo">
             <p>I am an experienced **Electrical Design Engineer** with a proven background in schematic capture, PCB layout, and system-level integration. I'm actively expanding my expertise into the intersection of hardware and software, with a keen focus on **AI/Machine Learning**, modern **website development (Full-Stack)**, and **FPGA systems** for high-performance computing. I leverage my strong analytical foundation to tackle complex development challenges.</p>
         </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Electrical & Hardware Engineering</h3>
+            <ul>
+                <li>Electrical Schematic Designing (e.g., Altium Designer)</li>
+                <li>PCB Layout and Manufacturing Prep</li>
+                <li>FPGA Systems (Verilog/VHDL)</li>
+                <li>System Integration and Debugging</li>
+            </ul>
+
+            <h3>Software & Web Development</h3>
+            <ul>
+                <li>**Languages:** Python, HTML5, CSS3, JavaScript (ES6+)</li>
+                <li>**Tools:** Git, GitHub, [Add a framework or library if you use one, e.g., Flask, React]</li>
+                <li>Data Analysis & Scripting</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: [Specific Project Name] - [Brief Tagline]</h3>
+                <p>Developed a custom [mention what it is] to automate the power-up sequence for a complex embedded system. This involved writing Python scripts for control and creating custom electrical interfaces. **Result:** Reduced manual setup time by 60%.</p>
+                <p><strong>Technologies Used:</strong> Python, Electrical Schematics, [Specific Hardware].</p>
+                <p><a href="https://link-to-project.com">View Project Details</a></p>
+            </div>
+            <div class="project">
+                <h3>Project 2: Interactive Portfolio Website Prototype</h3>
+                <p>A personal project to demonstrate full-stack development competency. Designed and built a responsive site using modern HTML, CSS, and JavaScript. Focus on clean code architecture and mobile-first design.</p>
+                <p><strong>Technologies Used:</strong> HTML5, CSS3 (Flexbox/Grid), JavaScript.</p>
+                <p><a href="https://another-link.com">View Live Site / Code</a></p>
+            </div>
+            </section>
 
         <section id="contact">
             <h2>Contact</h2>
